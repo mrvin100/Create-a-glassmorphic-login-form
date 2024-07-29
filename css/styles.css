@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* custom css file made by JeanDoe */
+
+/* import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* css variables */
+
+:root{
+	--main-clr: #567;
+	--light-bg: #e1d1f1;
+	--light-clr: #7a7b7c;
+	--black: #1a1b1c;
+	--white: #fff;
+	
+	--body-font: 'Poppins','Ubuntu Mono', sans-serif;
+}
+
+/* initialisation */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-weight: normal;
+}
+
+html{
+	font-size: 100%;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	background: var(--light-bg);
+	font-family: var(--body-font);
+}
+
+/* form section start */
+
+.container{
+	position: relative;
+}
+
+.container form{
+	background: rgba(255,255,255,.3);
+	padding: 2rem;
+	border-radius: .25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	border-left: 1px solid rgba(255,255,255,.7);
+	border-top: 1px solid rgba(255,255,255,.7);
+	backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 40px -6px rgba(0,0,0,.2);
+	width: 23rem;
+}
+.container form h2{
+	color: var(--main-clr);
+	font-size: 1.3rem;
+}
+.container form p{
+	color: var(--light-clr);
+	font-weight: 500;
+	opacity: .7;
+	font-size: .813rem;
+	margin-bottom: 2rem;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+.container form p .fas{
+	color: var(--main-clr);
+}
+.container form a{
+	text-decoration: none;
+	color: var(--light-clr);
+}
+.container form a:hover{
+	text-decoration: underline;
+	color: var(--black);
+}
+.container form a:active{
+	text-shadow: none;
+}
+
+.container form .box{
+	background: transparent;
+	border: none;
+	border-left: 1px solid rgba(255,255,255,.7);
+	border-top: 1px solid rgba(255,255,255,.7);
+	padding: 1rem;
+	width: 100%;
+	border-radius: .25rem;
+	backdrop-filter: blur(5px);
+	box-shadow: 4px 4px 60px rgba(0,0,0,.2);
+	color: var(--main-clr);
+	font-size: 1.1rem;
+	font-weight: 500;
+/*	text-shadow: 2px 2px 4px rgba(0,0,0,.2);*/
+	transition: all .3s;
+	margin-bottom: 2em;
+}
+
+input:hover,
+input[type="email"]:focus,
+input[type="password"]:focus{
+	background: rgba(255,255,255,.1);
+	box-shadow: 4px 4px 60px 8px rgba(0,0,0,.2);
+}
+
+input[type="button"]{
+	margin-top: 10px;
+	width: 100%;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 1rem;
+	border-radius: .25rem;
+	background: var(--main-clr);
+	color: var(--white);
+	letter-spacing: 1px;
+}
+
+::placeholder{
+	color: var(--light-clr);
+	font-weight: lighter;
+	font-family: var(--body-font);
+	font-size: .813rem;
+}
+
+.drop{
+	background: rgba(255,255,255,.3);
+	backdrop-filter: blur(10px);
+	border-radius: .25rem;
+	border-left: 1px solid rgba(255,255,255,.7);
+	border-top: 1px solid rgba(255,255,255,.7);
+	box-shadow: 10px 10px 60px -8px rgba(0,0,0,.2);
+	position: absolute;
+	transition: all .2s ease;
+}
+
+.drop-1{
+	height: 80px;
+	width: 80px;
+	top: -20px; left: -40px;
+	z-index: -1;
+}
+.drop-2{
+	height: 80px;
+	width: 80px;
+	bottom: -30px; right: -10px;
+}
+.drop-3{
+	height: 100px;
+	width: 100px;
+	bottom: 120px; right: -50px;
+	z-index: -1;
+}
+.drop-4{
+	height: 120px;
+	width: 120px;
+	top: -60px; right: -60px;
+}
+.drop-5{
+	height: 60px;
+	width: 60px;
+	bottom: 170px; left: 90px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
